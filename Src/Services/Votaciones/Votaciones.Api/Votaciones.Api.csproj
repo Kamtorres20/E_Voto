@@ -6,9 +6,12 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="8.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Votaciones.Service.EventHandlers\Votaciones.Service.EventHandlers.csproj" />
     <ProjectReference Include="..\Votaciones.Service.Query\Votaciones.Service.Query.csproj" />
   </ItemGroup>
 
