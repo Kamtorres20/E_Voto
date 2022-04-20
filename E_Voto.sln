@@ -101,6 +101,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Votaciones.Service.EventHan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Votaciones.Api", "Src\Services\Votaciones\Votaciones.Api\Votaciones.Api.csproj", "{17970151-A54A-45D5-A79D-6B748F0F87BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sufragantes.Test", "Src\Services\Sufragantes\Sufragantes.Test\Sufragantes.Test.csproj", "{E252860E-275A-45B5-A07F-F865FCF8A5B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -199,6 +201,10 @@ Global
 		{17970151-A54A-45D5-A79D-6B748F0F87BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17970151-A54A-45D5-A79D-6B748F0F87BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17970151-A54A-45D5-A79D-6B748F0F87BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E252860E-275A-45B5-A07F-F865FCF8A5B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E252860E-275A-45B5-A07F-F865FCF8A5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E252860E-275A-45B5-A07F-F865FCF8A5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E252860E-275A-45B5-A07F-F865FCF8A5B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -252,6 +258,7 @@ Global
 		{76A6FBD8-E62F-433B-8E65-7EE3D6DAFFFF} = {88131A3E-5399-4483-B8D0-E52BA3B10CCD}
 		{57B9C825-1C54-4285-8569-FD1C80FF42E7} = {88131A3E-5399-4483-B8D0-E52BA3B10CCD}
 		{17970151-A54A-45D5-A79D-6B748F0F87BB} = {167080B4-9FCF-4F14-A78E-703B6149914E}
+		{E252860E-275A-45B5-A07F-F865FCF8A5B9} = {865695B7-5114-4DEC-B2E0-1ACDAF533D1B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {01798B3C-5778-430D-8806-B4FE151CEFE1}

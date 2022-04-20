@@ -7,10 +7,6 @@ Apellidos nvarchar(400),
 FechaNacimiento date,
 Sexo int,
 CorreoElectronico nvarchar(200),
-UsuarioCrea nvarchar(50),
-FechaCrea date,
-UsuarioModifica nvarchar(50),
-FechaModifica date,
 )
 
 create table tbl_Candidatos (
@@ -24,10 +20,6 @@ Foto int,
 CorreoElectronico nvarchar(200),
 Propuesta nvarchar(200),
 DescripcionPropuesta nvarchar(500),
-UsuarioCrea nvarchar(50),
-FechaCrea date,
-UsuarioModifica nvarchar(50),
-FechaModifica date,
 )
 
 create table Tbl_Elecciones (
@@ -36,10 +28,6 @@ Titulo nvarchar(200),
 DescripcionTitulo nvarchar(500),
 orden int,
 Estado int,
-UsuarioCrea nvarchar(50),
-FechaCrea date,
-UsuarioModifica nvarchar(50),
-FechaModifica date,
 )
 
 create table Tbl_EleccionesXSufragantes (
@@ -47,10 +35,6 @@ Id bigint identity(1,1) not null,
 Id_Eleccion bigint, 
 Id_Sufragante bigint,
 Estado int,
-UsuarioCrea nvarchar(50),
-FechaCrea date,
-UsuarioModifica nvarchar(50),
-FechaModifica date,
 )
 
 ALTER TABLE Tbl_EleccionesXSufragantes
@@ -64,10 +48,6 @@ Id bigint identity(1,1) not null,
 Id_Eleccion bigint, 
 Id_Candidato bigint,
 Estado int,
-UsuarioCrea nvarchar(50),
-FechaCrea date,
-UsuarioModifica nvarchar(50),
-FechaModifica date,
 )
 
 ALTER TABLE Tbl_EleccionesXCandidato
@@ -82,10 +62,6 @@ Id_Eleccion bigint,
 Id_Candidato bigint,
 Id_Sufragante bigint,
 Salto int,
-UsuarioCrea nvarchar(50),
-FechaCrea date,
-UsuarioModifica nvarchar(50),
-FechaModifica date,
 )
 
 ALTER TABLE Tbl_Votacion
@@ -96,3 +72,14 @@ ADD FOREIGN KEY (Id_Candidato) REFERENCES tbl_Candidatos(Id);
 
 ALTER TABLE Tbl_Votacion
 ADD FOREIGN KEY (Id_Sufragante) REFERENCES tbl_Sufragantes(Id);
+
+
+Create table tbl_TipoIdentificacion(
+id bigint identity(1,1) not null,
+descripcion nvarchar(100),
+Estado int)
+
+Create table tbl_sexo(
+id bigint identity(1,1) not null,
+descripcion nvarchar(100),
+Estado int)
